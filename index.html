@@ -9,20 +9,16 @@
     <title>TODO vue</title>
 </head>
 <body id="app">
-    <h1 v-model="testVariable">{{testVariable}}</h1>
-    <h2>{{createNumber()}}</h2>
-    <ul>
-      <li v-for="data in testList">{{data}}</li>
-    </ul>
-    <input v-model="valeurDeInput" type="text" name="" id="">
-    <button v-on:click="ajouterTask">Valider</button>
-    <ul>
-        <li v-for="uneTask in tasks">{{uneTask}}</li>
-    </ul>
-    <!-- Get the latest version of vue js -->
-    
-    <script src="https://unpkg.com/vue@next"></script>
-    <script src="todo.js"></script>
-
+  <div class="card" style="width: 18rem;">
+    <img v-bind:src = "users.imageSrc" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Nom : {{users.name}}</h5>
+      <p class="card-text">Age : {{users.age}}</p>
+      <p class="card-text">Age + 10 : {{add10(users.age)}}</p>
+      <p class="card-text">NB Random : {{createNumber()}}</p>
+    </div>
+  </div>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="todo.js"></script>
 </body>
 </html>

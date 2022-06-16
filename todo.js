@@ -1,12 +1,24 @@
+const  users = 
+{
+    imageSrc  :  "./images/avatar-ffd9220111e032068c768269ac6ce9b2.jpg",
+    name : "Julie",
+    age : 23,
+    age10 : null,
+    nbRandom : null,
+};
 
 number = "";
 Vue.createApp({
     data(){
         return{
-            tasks: [],
-            valeurDeInput: '',
-            testVariable: 'Je suis une variable !',
-            testList : ["Numéro1","Numéro2","Numéro3"]
+            users :
+            {
+                imageSrc  :  "./image/avatar-ffd9220111e032068c768269ac6ce9b2.jpg",
+                name : "Julie",
+                age : 23,
+                age10 : null,
+                nbRandom : null,
+            }
         };
     },
     methods: {
@@ -16,15 +28,10 @@ Vue.createApp({
         },
         createNumber(){
             let number = Math.random();
-            if(number >= 0.5){
-                const result =  "Supérieur"
-                console.log(result)
-                return result;
-            }else{
-                const result =  "Inférieur"
-                console.log(result)
-                return result;
-            }
+            return number;
+        },
+        add10(age){
+            return age+10;
         }
     },
 }).mount("#app")
