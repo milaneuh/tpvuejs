@@ -1,3 +1,5 @@
+
+number = "";
 Vue.createApp({
     data(){
         return{
@@ -12,5 +14,17 @@ Vue.createApp({
             this.tasks.push(this.valeurDeInput);
             this.valeurDeInput = "";
         },
+        createNumber(){
+            let number = Math.random();
+            if(number >= 0.5){
+                const result =  "Supérieur"
+                console.log(result)
+                return result;
+            }else{
+                const result =  "Inférieur"
+                console.log(result)
+                return result;
+            }
+        }
     },
 }).mount("#app")
