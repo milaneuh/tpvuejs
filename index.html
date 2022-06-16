@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO vue</title>
+</head>
+<body id="app">
+    <h1 v-model="testVariable">{{testVariable}}</h1>
+    <ul>
+      <li v-for="data in testList">{{data}}</li>
+    </ul>
+    <input v-model="valeurDeInput" type="text" name="" id="">
+    <button v-on:click="ajouterTask">Valider</button>
+    <ul>
+        <li v-for="uneTask in tasks">{{uneTask}}</li>
+    </ul>
+    <!-- Get the latest version of vue js -->
+    
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="todo.js"></script>
+
+</body>
+</html>
