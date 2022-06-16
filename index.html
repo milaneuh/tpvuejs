@@ -18,6 +18,13 @@
       <p class="card-text">NB Random : {{createNumber()}}</p>
     </div>
   </div>
+  <div class="card" style="width: 18rem;">
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" v-on:click="number -= 1" class="btn btn-danger">-1</button>
+      <p class="card-text">  {{number}}  </p>
+      <button type="button" v-on:click="number += 1" class="btn btn-success">+1</button>
+    </div>
+  </div>
   <script src="https://unpkg.com/vue@next"></script>
   <script src="todo.js"></script>
 </body>

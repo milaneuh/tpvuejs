@@ -18,7 +18,8 @@ Vue.createApp({
                 age : 23,
                 age10 : null,
                 nbRandom : null,
-            }
+            },
+            number : 0
         };
     },
     methods: {
